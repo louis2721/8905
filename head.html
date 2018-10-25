@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="font/iconfont.css">
+	    <script src="js/jquery-1.10.2.min.js"></script>
+	    <script src="js/bootstrap.min.js"></script>
+		<style>
+			*{margin:0;padding:0;list-style: none;}
+	        html,body{font-size:10px;}
+			/*---------固定栏--------*/
+			body .fix{position: fixed;width:100%;z-index: 99;background-color: rgba(0,0,0,0.7);border:none;}
+	        .logo{width:100%;}
+	        
+	        .navbar-brand{padding:0;}
+	        .navbar{border-radius: 0;}
+	        .navbar-nav>li>a{color: white;}
+	        .navbar-nav>li>a:focus, .navbar-nav>li>a:hover{color:red;}
+	        .childnav li{float:right;}
+	        .childnav a{color:white;}
+	        .childnav li a:hover{background-color: transparent;color:red;}
+	        .childnav li a{padding: 10px 5px;}
+	        h5{color:white;}
+	        .nav-1{width:100%;border-top:1px white solid;margin-top:10px;}
+	        .nav a{font-size: 1.8rem;margin-top:1.8rem;}
+	        /*nav{height:8rem;}*/
+	        .collapse>.nav>li>a:hover{background-color: transparent;}
+	        .example-navbar-collapse a{font-size: 1.5rem;}
+	        
+	        @media all and (max-width: 767px) {
+	        	.navbar-header>.navbar-brand>img{
+	        		display: inline-block;
+	        	}
+	        	
+		   		.logo{
+		   			width:50%;
+		   			
+		   		}
+	   }
+	        
+	      
+			
+			
+		</style>
+		
+		
+	</head>
+	<body>
+<nav class="fix" role="navigation">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 col-sm-3 col-lg-3">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#"><img src="img/logo.png" alt="" class="logo img-responsive"></a>
+                    <button type="button" class="navbar-toggle" data-toggle="collapse"
+                            data-target="#example-navbar-collapse">
+                        <span class="sr-only">切换导航</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    
+                    
+
+                </div>
+            </div>
+            <div class="col-lg-9 col-md-9">
+                <div class="collapse navbar-collapse" id="example-navbar-collapse">
+                    <ul class="nav navbar-nav">
+                        <li><a href="#">首页</a></li>
+                        <li><a href="#">外贸营销型网站</a></li>
+                        <li><a href="#">外贸营销型理念</a></li>
+                        <li><a href="#">合作伙伴</a></li>
+                        <li><a href="#">我们的服务</a></li>
+                        <li><a href="#">新闻资讯</a></li>
+                        <li><a href="#">联系我们</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--<div class="nav-1">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-sm-12 col-xs-12">
+                    <div class="col-md-6 col-sm-6 col-xs-6">
+                        <h5>外贸营销型网站</h5>
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-xs-6">
+                        <ul class="nav text-right childnav">
+                            <li><a href="#">应用</a></li>
+                            <li><a href="#">功能</a></li>
+                            <li><a href="#">制作</a></li>
+                            <li><a href="#">概述</a></li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>-->
+</nav>
+		
+		
+		
+		
+		
+	</body>
+</html>

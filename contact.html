@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+              content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <title>练习我们了解更多外贸营销型网站</title>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="font/iconfont.css">
+        <style>
+            *{padding: 0;margin: 0;list-style: none;}
+            html{font-size: 10px;}
+            .myColor{color: #fff;}
+            .footericonbox a{color: #fff;}
+            .footericonbox a:hover{color: #ccc;text-decoration: none;}
+            .myColor a{color: #fff;}
+            .myColor a:hover{color: #ccc;text-decoration: none;}
+
+            /*.myContactpage{background: url("img/contactbg.png") no-repeat;width: 100%;padding-bottom: 4%;padding-top: 9%;background-size: cover;}
+            .myContactpage h2{color: #fff;padding-bottom: 2%;}
+            .myContactpage p{color: #fff;}
+
+            .myAddress{padding-top: 28%;}
+            .footerinput{background-color: rgba(55,55,55,.1);color: #fff;margin-top: 3%;border: 1px solid #fff;border-radius: 4px;width: 100%;padding: 4% 0% 4% 4%;}
+            #input1{background-color: rgba(0,0,0,0.1);color: #fff;padding: 2% 0% 2% 5%;border: 1px solid #fff;border-radius: 4px;}
+            ::-webkit-input-placeholder{color: #fff;}
+            .code {font-family:Arial,宋体;font-style:italic;color:green;border:0;padding:2px 3px;letter-spacing:3px;font-weight:bolder;}
+            .myBtn{margin-top: 3%;}
+            .form-group{margin-top: 9%;}
+            .fadeInUp{width: 100%;background-color: rgba(255,255,255,0.8);padding: 5% 4% 5% 4%;}
+            .myBanner{padding: 7% 3% 0% 3%;}
+            .myBanner>p{color: #515151;font-size: 1.6rem;text-indent: 4%;}*/
+
+
+            .myMidbar{width: 100%;background-color: #ccc;height: 1rem;}
+
+
+            .myFooter{width: 100%;background:url("img/footerbg.jpg") ;padding-bottom: 3%;}
+            .footlogo{width: 50%;height: 10%;}
+            .footericonbox li{float: left;margin-left: 3%;}
+            .iconfont{color: #fff;font-size: 3.6rem;}
+            #input2{background-color: rgba(0,0,0,0.1);color: #fff;padding: 2% 0% 2% 5%;border: 1px solid #fff;border-radius: 4px;margin-top: 3%;}
+            .myTag{padding-top: 3%;}
+            .myColor ul li{padding-bottom: 2%;}
+            
+        </style>
+    </head>
+    <body>
+        
+        <div class="myMidbar"></div>
+        <div class="myFooter">
+            <div class="container myTag">
+                <div class="row">
+                    <div class="col-md-12 col-xs-12 column">
+                        <div class="row">
+                            <div class="col-md-3 col-xs-12 column">
+                                <div class="row">
+                                    <div class="col-md-12 col-xs-12 column">
+                                        <img src="img/footerlogo.png" alt="" class="img-responsive footlogo">
+                                        <ul class="footericonbox">
+                                            <li><a href="#"><i class="icon iconfont icon-qq"></i></a></li>
+                                            <li><a href="#"><i class="icon iconfont icon-weixin"></i></a></li>
+                                            <li><a href="#"><i class="icon iconfont icon-weibo-copy"></i></a></li>
+                                            <li><a href="#"><i class="icon iconfont icon-renrenwang"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-xs-12 column myColor">
+                                <h3 style="font-weight: bolder;">联系我们</h3>
+                                <p>地址：河南省洛阳市西工区九都路3号新神州大厦9层</p>
+                                <p>联系电话：+86 18625991917</p>
+                                <p>电子邮箱：info@silkarea.net</p>
+                            </div>
+                            <div class="col-md-3 col-xs-12 column myColor">
+                                <h3 style="font-weight: bolder;">快速链接</h3>
+                                <ul>
+                                    <li><a href="#">新丝域首页</a></li>
+                                    <li><a href="#">外贸营销型网站</a></li>
+                                    <li><a href="#">外贸营销理念</a></li>
+                                    <li><a href="#">我们的服务</a></li>
+                                    <li><a href="#">联系我们</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-md-3 col-xs-12 column myColor">
+                                <form role="form">
+                                    <div class="form-group">
+                                        <input type="text" class="footerinput" placeholder="您的姓名">
+                                        <input type="text" class="footerinput" placeholder="电子邮箱">
+                                        <input type="text" class="bomcaptchainput" id="input2" data-bv-field="validatecode" placeholder="验证码">
+                                        <input type="button" id="checkCode1" class="code" style="width:60px" onclick="yanzhengma()">
+                                        <input id="Button2" onclick="validate();" type="button" value="给我们发送消息" class="btn btn-default myBtn">
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <p class="myColor" style="text-align: center;margin-top: 2%;">新丝域网络科技 © 2018 豫ICP备16002877号</p>
+        </div>
+
+        <script>
+//          window.onload=function(){
+//              createCode();
+//              yanzhengma();
+//
+//          }
+//
+//
+//          var code; //在全局 定义验证码
+//          function createCode() {
+//              code = new Array();
+//              var codeLength = 4; //验证码的长度
+//              var checkCode = document.getElementById("checkCode");
+//              checkCode.value = "";
+//              var selectChar = new Array(2, 3, 4, 5, 6, 7, 8, 9, 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'J', 'K', 'L', 'M', 'N', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z');
+//              for (var i = 0; i < codeLength; i++) {
+//                  var charIndex = Math.floor(Math.random() * 32);
+//                  code += selectChar[charIndex];
+//              }
+//              if (code.length != codeLength) {
+//                  createCode();
+//              }
+//              checkCode.value = code;
+//          }
+//
+//          function validate() {
+//              var inputCode = document.getElementById("input1").value.toUpperCase();
+//              if (inputCode.length <= 0) {
+//                  alert("请输入验证码！");
+//                  return false;
+//              } else if (inputCode != code) {
+//                  alert("验证码输入错误！");
+//                  createCode();
+//                  return false;
+//              } else {
+//                  alert("成功！");
+//                  return true;
+//              }
+//          }
+//
+//
+//          function yanzhengma() {
+//              code = new Array();
+//              var codeLength = 4; //验证码的长度
+//              var checkCode1 = document.getElementById("checkCode1");
+//              checkCode1.value = "";
+//              var selectChar = new Array(2, 3, 4, 5, 6, 7, 8, 9, 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'J', 'K', 'L', 'M', 'N', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z');
+//              for (var i = 0; i < codeLength; i++) {
+//                  var charIndex = Math.floor(Math.random() * 32);
+//                  code += selectChar[charIndex];
+//              }
+//              if (code.length != codeLength) {
+//                  yanzhengma();
+//              }
+//              checkCode1.value = code;
+//          }
+//
+//          function shuaxin() {
+//              var inputCode1 = document.getElementById("input2").value.toUpperCase();
+//              if (inputCode1.length <= 0) {
+//                  alert("请输入验证码！");
+//                  return false;
+//              } else if (inputCode1 != code) {
+//                  alert("验证码输入错误！");
+//                  yanzhengma();
+//                  return false;
+//              } else {
+//                  alert("成功！");
+//                  return true;
+//              }
+//          }
+//      </script>
+
+
+    </body>
+</html>
